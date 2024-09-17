@@ -90,4 +90,80 @@ Complete the exercise in the space below:
 const generateEmail = (name, domain) => {
   return name + '@' + domain
 }
-console.log('Exercise 4 Result:', generateEmail('johnsmith', 'example.com'))
+//console.log('Exercise 4 Result:', generateEmail('johnsmith', 'example.com'))
+
+/*
+Exercise 5: greetUser()
+
+Define a function called greetUser. It should take a name and a 
+time of day (morning, afternoon, evening) and return a personalized 
+greeting.
+
+Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
+
+Complete the exercise in the space below:
+*/
+
+const greetUser = (name, timeOfDay) => {
+  return `Good ${timeOfDay} , ${name}!`
+}
+
+//console.log('Exercise 5 Result:', greetUser('Ali', 'afternoon'))
+
+/*
+Exercise 6: maxOfThree()
+
+Define a function, maxOfThree. It should accept three numbers 
+and return the largest among them.
+
+Example: maxOfThree(17, 4, 9) should return 17.
+
+Complete the exercise in the space below:
+*/
+const maxOfThree = (num1, num2, num3) => {
+  return Math.max(num1, num2, num3)
+}
+//console.log('Exercise 6 Result:', maxOfThree(5, 10, 81))
+
+/*
+Exercise 7: calculateTip()
+
+Create a function called calculateTip. It should take two arguments: 
+the bill amount and the tip percentage (as a whole number). 
+The function should return the amount of the tip.
+
+Example: calculateTip(50, 20) should return 10.
+
+Complete the exercise in the space below:
+*/
+const calculateTip = (billAmount, tipPercentage) => {
+  return (billAmount * tipPercentage) / 100
+}
+
+//console.log('Exercise 7 Result:', calculateTip(100, 30))
+
+/*
+Exercise 8: convertTemperature()
+
+Write a function named convertTemperature. 
+It takes two arguments: a temperature and a string representing the 
+scale ('C' for Celsius, 'F' for Fahrenheit). 
+Convert the temperature to the other scale.
+
+Example: convertTemperature(32, 'C') should return 89.6 (Fahrenheit).
+Example: convertTemperature(32, 'F') should return 0 (Celsius).
+
+Complete the exercise in the space below:
+*/
+
+const convertTemperature = (temperature, scale) => {
+  if (scale === 'C') {
+    return temperature * (9 / 5) + 32
+  } else if (scale === 'F') {
+    return (temperature - 32) * (5 / 9)
+  } else {
+    return false
+  }
+}
+
+console.log('Exercise 8 Result:', convertTemperature(1, 'C'))
