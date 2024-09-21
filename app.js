@@ -37,7 +37,7 @@ const isAdult = (number) => {
   }
 }
 
-//console.log('Exercise 2 Result:', isAdult(15))
+console.log('Exercise 2 Result:', isAdult(15))
 
 /*
 Exercise 3: isCharAVowel()
@@ -74,7 +74,7 @@ const isCharAVowel = (character) => {
   }
 }
 
-//console.log('Exercise 3 Result:', isCharAVowel('l'))
+console.log('Exercise 3 Result:', isCharAVowel('l'))
 
 /*
 Exercise 4: generateEmail()
@@ -90,7 +90,7 @@ Complete the exercise in the space below:
 const generateEmail = (name, domain) => {
   return name + '@' + domain
 }
-//console.log('Exercise 4 Result:', generateEmail('johnsmith', 'example.com'))
+console.log('Exercise 4 Result:', generateEmail('johnsmith', 'example.com'))
 
 /*
 Exercise 5: greetUser()
@@ -107,8 +107,7 @@ Complete the exercise in the space below:
 const greetUser = (name, timeOfDay) => {
   return `Good ${timeOfDay} , ${name}!`
 }
-
-//console.log('Exercise 5 Result:', greetUser('Ali', 'afternoon'))
+console.log('Exercise 5 Result:', greetUser('Ali', 'afternoon'))
 
 /*
 Exercise 6: maxOfThree()
@@ -123,7 +122,7 @@ Complete the exercise in the space below:
 const maxOfThree = (num1, num2, num3) => {
   return Math.max(num1, num2, num3)
 }
-//console.log('Exercise 6 Result:', maxOfThree(5, 10, 81))
+console.log('Exercise 6 Result:', maxOfThree(5, 10, 81))
 
 /*
 Exercise 7: calculateTip()
@@ -139,8 +138,7 @@ Complete the exercise in the space below:
 const calculateTip = (billAmount, tipPercentage) => {
   return (billAmount * tipPercentage) / 100
 }
-
-//console.log('Exercise 7 Result:', calculateTip(100, 30))
+console.log('Exercise 7 Result:', calculateTip(100, 30))
 
 /*
 Exercise 8: convertTemperature()
@@ -165,8 +163,7 @@ const convertTemperature = (temperature, scale) => {
     return false
   }
 }
-
-//console.log('Exercise 8 Result:', convertTemperature(1, 'C'))
+console.log('Exercise 8 Result:', convertTemperature(1, 'C'))
 
 /*
 Exercise 9: basicCalculator()
@@ -200,8 +197,7 @@ const basicCalculator = (num1, num2, operation) => {
       break
   }
 }
-
-//console.log('Exercise 9 Result:', basicCalculator(10, 5, 'multiply'))
+console.log('Exercise 9 Result:', basicCalculator(10, 5, 'multiply'))
 
 /*
 Exercise 10: calculateGrade()
@@ -233,7 +229,7 @@ const calculateGrade = (score) => {
   }
 }
 
-//console.log('Exercise 10 Result:', calculateGrade(60))
+console.log('Exercise 10 Result:', calculateGrade(60))
 
 /*
 Exercise 11: createUsername()
@@ -255,7 +251,7 @@ const createUsername = (firstName, lastName) => {
   let charCount = firstName.length + lastName.length
   return userName + charCount
 }
-//console.log('Exercise 11 Result:', createUsername('Samantha', 'Green'))
+console.log('Exercise 11 Result:', createUsername('Samantha', 'Green'))
 
 /*
 Exercise 12: numArgs()
@@ -269,7 +265,6 @@ Complete the exercise in the space below:
 //   console.log(arguments.length)
 // }
 function numArgs(a, b, c) {
-  return console.log('Exercise 12 Result:', arguments.length)
+  return arguments.length
 }
-numArgs(1, 4, 5, 5)
-// console.log('Exercise 12 Result:', numArgs(1, 4, 5))
+console.log('Exercise 12 Result:', numArgs(1, 4))
